@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>WebVisualization</title>
+</head>
+
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e2e2e2;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(255, 251, 251);
+    padding: 14px 16px;
+  }
+  
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #ebebeb;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .container{
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 45px;
+    width: 85%;
+  }
+
+  h1{
+    font-size: 45px;
+    color:rgb(0, 143, 119);
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="navbar">
+    <a href="#home">Data</a>
+    <a href="#news">Comparison</a> 
+    <div class="dropdown">
+      <button class="dropbtn">Plots 
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Max Temperature</a>
+        <a href="#">Humidity</a>
+        <a href="#">Cloudiness</a>
+        <a href="#">Windspeed</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <article>
+      <h1>Summary: Latitude vs. X</h1>
+      <hr>
+      <img src="Images/Fig1.png" alt="City Latitude vs. Max Temperature (01/05/17)" width="300" height="250">
+      </article>
+  </div>
+  <div class="container">
+    <h2>Visualizations</h2>
+    <img src="Images/Fig1.png" alt="City Latitude vs. Max Temperature (01/05/17)" width="200" height="150">
+    <img src="Images/Fig2.png" alt="City Latitude vs. Max Temperature (01/05/17)" width="200" height="150">
+    <img src="Images/Fig3.png" alt="City Latitude vs. Max Temperature (01/05/17)" width="200" height="150">
+    <img src="Images/Fig4.png" alt="City Latitude vs. Max Temperature (01/05/17)" width="200" height="150">
+  </div>
+</body>
+
+</html>
